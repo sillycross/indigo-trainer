@@ -1,0 +1,6 @@
+{
+	"mahimahi-command": "mm-delay 20 mm-link 12Mbps.trace 12Mbps.trace",
+	"client-duration": 30,
+	"num-clients": 4
+} 
+
