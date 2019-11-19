@@ -19,6 +19,12 @@ print('Copying model PB file to tensorflow..')
 exit_code = os.system('cp %s/graph.pb tensorflow' % MODEL_REPO_NAME)
 assert(exit_code == 0)
 
+if USING_LSTM_MODEL:
+	exit_code = os.system('cp graph.config.pbtxt tensorflow')
+	assert(exit_code == 0)
+else:
+	exit_code = os.system('cp stateless_graph.config.pbtxt tensorflow/graph.config.pbtxt')
+	assert(exit_code == 0)
 os.chdir(PROJECT_ROOT + '/tensorflow')
 
 # GCC sometimes crashes, retry on failure

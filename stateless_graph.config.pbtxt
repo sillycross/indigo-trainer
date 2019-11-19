@@ -1,0 +1,36 @@
+feed {
+  id {
+    node_name: "inference_inputs"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 9
+    }
+  }
+}
+feed {
+  id {
+    node_name: "lstm_state_in"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+fetch {
+  id {
+    node_name: "action_probs"
+  }
+}
+fetch {
+  id {
+    node_name: "lstm_state_out"
+  }
+} 

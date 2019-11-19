@@ -55,7 +55,9 @@ exit_code = os.system('cp ../graph.config.pbtxt .')
 assert(exit_code == 0)
 
 # the default configure options seems to detect everything correctly
+# sometimes yes returns broken pipe, but it's not a problem
 exit_code = os.system('yes "" | ./configure')
 assert(exit_code == 0)
 
+print('Everything seems to be OK!')
 
