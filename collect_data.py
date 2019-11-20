@@ -11,27 +11,32 @@ from os import path
 import time
 import subprocess
 
+from env_vars import *
+
 parser = argparse.ArgumentParser()
-parser.add_argument("--config", dest="config", help="the json config file")
-parser.add_argument("--ca-name", dest="ca_name", help="the name of the congestion control algorithm")
+parser.add_argument("--task", dest="task", help="the ordinal of task in config.json")
 args = parser.parse_args()
 
-print("Loading configuration from file %s.." % args.config)
+assert(args.task != None)
+args.task = int(args.task)
 
-with open(args.config) as json_file:
-	data = json.load(json_file)
+os.chdir(PROJECT_ROOT)
 
-print('Configuration is the following:')
-print(data)
+with open('workloads/config.json') as json_file:
+	all_tasks = json.load(json_file)
 
-assert('num-clients' in data)
-assert('client-duration' in data)
-assert('mahimahi-command' in data)
+assert(0 <= args.task and args.task < len(all_tasks))
+task = all_tasks[args.task]
 
-ca_name = args.ca_name
-num_clients = int(data['num-clients'])
-client_duration = int(data['client-duration'])
-client_cmd = data['mahimahi-command']
+assert('num-clients' in task)
+assert('client-duration' in task)
+assert('mahimahi-command' in task)
+assert('expert_cwnd' in task)
+
+num_clients = int(task['num-clients'])
+client_duration = int(task['client-duration'])
+client_cmd = task['mahimahi-command']
+expert_cwnd = task['expert_cwnd']
 
 print('num_clients = %d, client_duration = %d' % (num_clients, client_duration))
 
@@ -83,7 +88,7 @@ num_interfaces = get_num_interfaces()
 
 clients = []
 for i in range(0, num_clients):
-	clients.append(run_shell(cmd = '%s -- sh -c \'python2 run_client.py --duration %d --ca-name %s\'' % (client_cmd, client_duration, ca_name)))
+	clients.append(run_shell(cmd = '%s -- sh -c \'python2 run_client.py --duration %d --ca-name %s\'' % (client_cmd, client_duration, CONG_ALG_NAME)))
 	clients[i].start()
 	print('Client %d spawned!' % i)
 	while (True):
@@ -107,7 +112,7 @@ assert(server.exit_code == 0)
 
 # format training output into output file
 #
-exit_code = os.system('./training_output_formatter >> training_output.txt')
+exit_code = os.system('./training_output_formatter %d %d training_output.npz' % (EPISODE_LEN, expert_cwnd))
 assert(exit_code == 0)
 
 print('Done!')

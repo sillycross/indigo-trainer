@@ -11,6 +11,11 @@ def load_training_data(npz_file_path):
     expert_actions = data['expert_actions']
     input_vectors = data['input_vectors']
     data.close()
+    assert(len(input_vectors.shape) == 3)
+    assert(len(expert_actions.shape) == 2)
+    assert(input_vectors.shape[0] == expert_actions.shape[0])
+    assert(input_vectors.shape[1] == EPISODE_LEN)
+    assert(expert_actions.shape[1] == EPISODE_LEN)
     if (not USING_LSTM_MODEL):
         input_vectors = input_vectors.reshape(-1, input_vectors.shape[-1])
         expert_actions = expert_actions.flatten()
