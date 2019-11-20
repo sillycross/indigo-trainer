@@ -14,11 +14,12 @@ gcp_zone_default = "us-central1-f"
 parser = argparse.ArgumentParser()
 parser.add_argument("--cred", dest="cred", help="the Github personal access token")
 parser.add_argument("--num-leaves", dest="num_leaves", help="the number of leaves to use")
-parser.add_argument("--zone", dest="zone", default=gcp_zone_default, help="the Google Cloud Compute zone to create instances")
-parser.add_argument("--run-id", dest="run_id", help="If manually assigned, must be a globally unique ID for this train run. It will be used as instance group name, instance name prefix, and branch prefix in model repo. May only contain '-', 'a-z', '0-9'")
+parser.add_argument("--zone", dest="zone", default=gcp_zone_default, help="Optional. The Google Cloud Compute zone to create instances")
+parser.add_argument("--run-id", dest="run_id", help="Optional. If manually assigned, must be a globally unique ID for this train run. It will be used as instance group name, instance name prefix, and branch prefix in model repo. May only contain '-', 'a-z', '0-9'")
 
 args = parser.parse_args()
 
+assert(args.cred != None)
 assert(args.num_leaves != None)
 args.num_leaves = int(args.num_leaves)
 assert(args.num_leaves > 0)
@@ -27,15 +28,15 @@ os.chdir(PROJECT_ROOT)
 
 # make sure that the git directory is clean 
 #
-#exit_code = os.system('[ -z "$(git status --untracked-files=no --porcelain)" ]')
-#if (exit_code != 0):
-#	print('Your git directory is not clean! Commit all changes before running this script!')
-#	assert(False)
+exit_code = os.system('[ -z "$(git status --untracked-files=no --porcelain)" ]')
+if (exit_code != 0):
+	print('Your git directory is not clean! Commit all changes before running this script!')
+	assert(False)
 	
-#exit_code = os.system("git status --untracked-files=no | grep 'Your branch is up to date with'")
-#if (exit_code != 0):	# grep returns 1 on no matches and 2 on error
-#	print('Your git branch is not up to date with remote! Push all changes before running this script!')
-#	assert(False)
+exit_code = os.system("git status --untracked-files=no | grep 'Your branch is up to date with'")
+if (exit_code != 0):	# grep returns 1 on no matches and 2 on error
+	print('Your git branch is not up to date with remote! Push all changes before running this script!')
+	assert(False)
 
 exit_code = os.system('git symbolic-ref --short HEAD > cur_branchname.txt')
 assert(exit_code == 0)
@@ -126,4 +127,72 @@ create_node(instance_group_name=instance_group_name,
 # Setup master and leaves 
 # We need to clone the repo, checkout the corresponding branch and run the setup script
 
+def ExecuteOnMasterOrLeaf(leaf_id, command):
+    assert(-1 <= leaf_id and leaf_id < args.num_leaves)
+    if leaf_id >= 0:
+        node_name = 'leaf%d' % leaf_id
+    else:
+        node_name = 'master'
+    cmd = 'gcloud beta compute --project edgect-1155 ssh --zone %s indigo-%s-%s -- "%s"' % (args.zone, args.run_id, node_name, command)
+    exit_code = os.system(cmd)
+    return exit_code
+    
+class AsyncRunOnNode(threading.Thread):
+    def __init__(self, leaf_id, fn):
+        threading.Thread.__init__(self)
+        self.fn = fn
+        self.leaf_id = leaf_id
+        self.daemon = True
+        self.exit_code = -1
+		
+    def run(self):
+        self.exit_code = fn(self.leaf_id)
+	
+def init_repo(leaf_id):
+    return ExecuteOnMasterOrLeaf(leaf_id, 'git clone https://github.com/%s/%s && cd %s && git checkout %s' % (GITHUB_USER_NAME, TRAIN_REPO_NAME, TRAIN_REPO_NAME, trainer_repo_branch_name))
+    
+def leaf_fn(leaf_id):
+    assert(0 <= leaf_id and leaf_id < args.num_leaves)
+    exit_code = init_repo(leaf_id)
+    if exit_code != 0:
+        print('*** ERR *** Failed to init repo!')
+        return exit_code
+    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 leaf_setup.py' % TRAIN_REPO_NAME)
+    if exit_code != 0:
+        print('*** ERR *** Failed to execute leaf_setup.py!')
+        return exit_code
+    return 0
+    
+def master_fn(leaf_id):
+    assert(leaf_id == -1)
+    exit_code = init_repo(leaf_id)
+    if exit_code != 0:
+        print('*** ERR *** Failed to init repo!')
+        return exit_code
+    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 generate_gcp_config_json.py --num_leaves %d --run-id %s --zone %s' % (TRAIN_REPO_NAME, args.num_leaves, args.run_id, args.zone))
+    if exit_code != 0:
+        print('*** ERR *** Failed to generate gcp_config.json!')
+        return exit_code
+    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 master_setup.py --cred %s' % (TRAIN_REPO_NAME, args.cred))
+    if exit_code != 0:
+        print('*** ERR *** Failed to execute master_setup.py!')
+        return exit_code
+    return 0
+    
+print('Initializing environment on nodes..')
+threads = []
+for i in range(0, args.num_leaves)
+    threads.append(AsyncRunOnNode(i, leaf_fn))
+    threads[i].run()
+
+threads.append(AsyncRunOnNode(-1, master_fn))
+threads[-1].run()
+	
+for i in range(0, args.num_leaves + 1):
+    threads[i].join()
+	
+for i in range(0, args.num_leaves + 1):
+    assert(threads[i].exit_code == 0)
+
+print('All nodes initialized')
 
