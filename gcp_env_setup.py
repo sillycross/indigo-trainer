@@ -123,3 +123,7 @@ create_node(instance_group_name=instance_group_name,
             instance_name='indigo-%s-master' % (args.run_id), 
             instance_zone=args.zone)
 
+# Setup master and leaves 
+# We need to clone the repo, checkout the corresponding branch and run the setup script
+
+
