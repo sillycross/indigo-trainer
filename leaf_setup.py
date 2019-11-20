@@ -12,13 +12,7 @@ from env_vars import *
 
 os.chdir(PROJECT_ROOT)
 
-exit_code = os.system('sudo apt-get update')
-assert(exit_code == 0)
-
-exit_code = os.system('sudo apt-get install -y libz-dev iperf mahimahi')
-assert(exit_code == 0)
-
-exit_code = os.system('sudo sysctl -w net.ipv4.ip_forward=1')
+exit_code = os.system('python3 install_pkgs.py')
 assert(exit_code == 0)
 
 exit_code = os.system('git clone https://github.com/%s/%s' % (GITHUB_USER_NAME, MODEL_REPO_NAME))
