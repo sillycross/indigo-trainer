@@ -12,10 +12,10 @@ from env_vars import *
 
 os.chdir(PROJECT_ROOT)
 
-exit_code = os.system('git clone git@github.com:%s/%s.git' % (GITHUB_USER_NAME, MODEL_REPO_NAME))
+exit_code = os.system('git clone https://github.com/%s/%s' % (GITHUB_USER_NAME, MODEL_REPO_NAME))
 assert(exit_code == 0)
 
-exit_code = os.system('git clone git@github.com:%s/%s.git' % (GITHUB_USER_NAME, LKM_REPO_NAME))
+exit_code = os.system('git clone https://github.com/%s/%s' % (GITHUB_USER_NAME, LKM_REPO_NAME))
 assert(exit_code == 0)
 
 os.chdir(PROJECT_ROOT + '/' + LKM_REPO_NAME + '/training_output_formatter')
