@@ -1,0 +1,4370 @@
+[
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 8,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 8,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 8,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 8,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 17,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 17,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 17,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 17,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 33,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 33,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 33,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 33,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 50,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 50,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 50,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 50,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 67,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 67,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 67,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 67,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 17,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 17,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 17,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 17,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 33,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 33,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 33,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 33,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 67,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 67,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 67,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 67,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 100,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 100,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 100,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 100,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 133,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 133,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 133,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 133,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 33,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 33,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 33,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 33,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 67,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 67,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 67,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 67,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 133,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 133,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 133,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 133,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 200,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 200,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 200,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 200,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 267,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 267,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 267,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 267,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 50,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 50,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 50,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 50,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 100,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 100,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 100,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 100,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 200,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 200,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 200,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 200,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 300,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 300,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 300,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 300,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 400,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 400,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 400,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 400,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 67,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 67,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 67,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 67,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 133,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 133,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 133,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 133,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 267,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 267,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 267,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 267,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 400,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 400,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 400,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 400,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 533,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 533,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 533,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 533,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 83,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 83,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 83,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 83,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 167,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 167,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 167,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 167,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 333,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 333,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 333,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 333,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 500,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 500,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 500,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 500,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 667,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 667,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 667,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 667,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 100,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 100,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 100,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 100,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 200,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 200,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 200,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 200,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 400,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 400,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 400,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 400,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 600,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 600,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 600,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 600,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 800,
+        "num-clients": 1,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 800,
+        "num-clients": 2,
+        "repeats": 4
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 800,
+        "num-clients": 4,
+        "repeats": 2
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 800,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 6 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 9,
+        "expert_cwnd": 9,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 5 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 8,
+        "expert_cwnd": 9,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 10,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 7 mm-link workloads/8Mbps.trace workloads/8Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 9,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 9,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 9,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 10,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 10,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 10,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 11 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 9,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 7 mm-link workloads/8Mbps.trace workloads/8Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 9,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 18 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 17,
+        "expert_cwnd": 18,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 11 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 18,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 6 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 9,
+        "expert_cwnd": 20,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 20,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/14Mbps.trace workloads/14Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 19,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 20,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/12Mbps.trace workloads/12Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 20,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 20,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 5 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 8,
+        "expert_cwnd": 20,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 16 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 16,
+        "expert_cwnd": 19,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 19,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 15 mm-link workloads/12Mbps.trace workloads/12Mbps.trace",
+        "client-duration": 15,
+        "expert_cwnd": 30,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 21 mm-link workloads/8Mbps.trace workloads/8Mbps.trace",
+        "client-duration": 19,
+        "expert_cwnd": 28,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 7 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 27,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 21 mm-link workloads/8Mbps.trace workloads/8Mbps.trace",
+        "client-duration": 19,
+        "expert_cwnd": 28,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 6 mm-link workloads/26Mbps.trace workloads/26Mbps.trace",
+        "client-duration": 9,
+        "expert_cwnd": 26,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 11 mm-link workloads/16Mbps.trace workloads/16Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 29,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 30,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 18 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 17,
+        "expert_cwnd": 30,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 11 mm-link workloads/16Mbps.trace workloads/16Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 29,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 18 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 17,
+        "expert_cwnd": 30,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 29 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 24,
+        "expert_cwnd": 29,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 5 mm-link workloads/45Mbps.trace workloads/45Mbps.trace",
+        "client-duration": 8,
+        "expert_cwnd": 38,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 7 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 36,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 6 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 9,
+        "expert_cwnd": 40,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 43 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 36,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 40,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 37,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 15 mm-link workloads/16Mbps.trace workloads/16Mbps.trace",
+        "client-duration": 15,
+        "expert_cwnd": 40,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 36,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 34 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 40,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 6 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 9,
+        "expert_cwnd": 40,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 40,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 34 mm-link workloads/8Mbps.trace workloads/8Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 45,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 16 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 16,
+        "expert_cwnd": 48,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 9 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 11,
+        "expert_cwnd": 48,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 5 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 8,
+        "expert_cwnd": 46,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 49,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 7 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 46,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 48,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 17 mm-link workloads/17Mbps.trace workloads/17Mbps.trace",
+        "client-duration": 16,
+        "expert_cwnd": 48,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 6 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 9,
+        "expert_cwnd": 43,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/13Mbps.trace workloads/13Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 50,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 33 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 27,
+        "expert_cwnd": 50,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 54,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 60,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 37 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 56,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 18 mm-link workloads/19Mbps.trace workloads/19Mbps.trace",
+        "client-duration": 17,
+        "expert_cwnd": 57,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 58,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 39 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 31,
+        "expert_cwnd": 58,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 25 mm-link workloads/14Mbps.trace workloads/14Mbps.trace",
+        "client-duration": 22,
+        "expert_cwnd": 58,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 13 mm-link workloads/26Mbps.trace workloads/26Mbps.trace",
+        "client-duration": 14,
+        "expert_cwnd": 56,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 59,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 35 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 58,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 15 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 15,
+        "expert_cwnd": 58,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 33 mm-link workloads/12Mbps.trace workloads/12Mbps.trace",
+        "client-duration": 27,
+        "expert_cwnd": 66,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 7 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 68,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 65,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 61,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 52 mm-link workloads/8Mbps.trace workloads/8Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 69,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 36 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 29,
+        "expert_cwnd": 66,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 66,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/5Mbps.trace workloads/5Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 62,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 14 mm-link workloads/29Mbps.trace workloads/29Mbps.trace",
+        "client-duration": 14,
+        "expert_cwnd": 68,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 8 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 10,
+        "expert_cwnd": 69,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 15 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 15,
+        "expert_cwnd": 68,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 26 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 22,
+        "expert_cwnd": 78,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 78,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 53 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 80,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 80,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 43 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 79,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 74,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 43 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 79,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 43 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 79,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 21 mm-link workloads/22Mbps.trace workloads/22Mbps.trace",
+        "client-duration": 19,
+        "expert_cwnd": 77,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 47 mm-link workloads/10Mbps.trace workloads/10Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 78,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 15 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 15,
+        "expert_cwnd": 80,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 17 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 16,
+        "expert_cwnd": 88,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 19 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 89,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 88,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 17 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 16,
+        "expert_cwnd": 88,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 87,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 88,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 30 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 25,
+        "expert_cwnd": 90,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/45Mbps.trace workloads/45Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 90,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 87,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 42 mm-link workloads/12Mbps.trace workloads/12Mbps.trace",
+        "client-duration": 33,
+        "expert_cwnd": 84,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 27 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 23,
+        "expert_cwnd": 90,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 18 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 17,
+        "expert_cwnd": 96,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 38 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 95,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 10 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 95,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 100 mm-link workloads/6Mbps.trace workloads/6Mbps.trace",
+        "client-duration": 72,
+        "expert_cwnd": 100,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 34 mm-link workloads/17Mbps.trace workloads/17Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 96,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 30 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 25,
+        "expert_cwnd": 100,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 19 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 98,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/26Mbps.trace workloads/26Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 100,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/7Mbps.trace workloads/7Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 91,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 52 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 95,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 53 mm-link workloads/11Mbps.trace workloads/11Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 97,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 14 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 14,
+        "expert_cwnd": 114,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 54 mm-link workloads/13Mbps.trace workloads/13Mbps.trace",
+        "client-duration": 41,
+        "expert_cwnd": 117,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/12Mbps.trace workloads/12Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 114,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 110,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 11 mm-link workloads/65Mbps.trace workloads/65Mbps.trace",
+        "client-duration": 12,
+        "expert_cwnd": 119,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 45 mm-link workloads/16Mbps.trace workloads/16Mbps.trace",
+        "client-duration": 35,
+        "expert_cwnd": 120,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 120,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 31 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 119,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 119,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 12 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 13,
+        "expert_cwnd": 120,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/14Mbps.trace workloads/14Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 119,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 46 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 138,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 93 mm-link workloads/9Mbps.trace workloads/9Mbps.trace",
+        "client-duration": 67,
+        "expert_cwnd": 140,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 28 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 24,
+        "expert_cwnd": 140,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 58 mm-link workloads/14Mbps.trace workloads/14Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 135,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 35 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 140,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 32 mm-link workloads/26Mbps.trace workloads/26Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 139,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 14 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 14,
+        "expert_cwnd": 135,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/42Mbps.trace workloads/42Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 140,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 28 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 24,
+        "expert_cwnd": 140,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 19 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 139,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 31 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 140,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 155,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 22 mm-link workloads/42Mbps.trace workloads/42Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 154,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 25 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 22,
+        "expert_cwnd": 158,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 24 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 21,
+        "expert_cwnd": 160,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/13Mbps.trace workloads/13Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 150,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/41Mbps.trace workloads/41Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 157,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 47 mm-link workloads/20Mbps.trace workloads/20Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 157,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 24 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 21,
+        "expert_cwnd": 156,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 50 mm-link workloads/19Mbps.trace workloads/19Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 158,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/14Mbps.trace workloads/14Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 159,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 15 mm-link workloads/64Mbps.trace workloads/64Mbps.trace",
+        "client-duration": 15,
+        "expert_cwnd": 160,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 180,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 27 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 23,
+        "expert_cwnd": 180,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 45 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 35,
+        "expert_cwnd": 180,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 34 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 176,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 178,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 34 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 176,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 32 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 176,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 83 mm-link workloads/13Mbps.trace workloads/13Mbps.trace",
+        "client-duration": 60,
+        "expert_cwnd": 180,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 21 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 19,
+        "expert_cwnd": 178,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 45 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 35,
+        "expert_cwnd": 180,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 83 mm-link workloads/13Mbps.trace workloads/13Mbps.trace",
+        "client-duration": 60,
+        "expert_cwnd": 180,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 18 mm-link workloads/66Mbps.trace workloads/66Mbps.trace",
+        "client-duration": 17,
+        "expert_cwnd": 198,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 26 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 22,
+        "expert_cwnd": 199,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 195,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 20 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 18,
+        "expert_cwnd": 200,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 23 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 199,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 24 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 21,
+        "expert_cwnd": 200,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 46 mm-link workloads/26Mbps.trace workloads/26Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 199,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 22 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 20,
+        "expert_cwnd": 198,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 196,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 17 mm-link workloads/70Mbps.trace workloads/70Mbps.trace",
+        "client-duration": 16,
+        "expert_cwnd": 198,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 27 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 23,
+        "expert_cwnd": 198,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 39 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 31,
+        "expert_cwnd": 214,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/17Mbps.trace workloads/17Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 218,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 24 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 21,
+        "expert_cwnd": 216,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 38 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 215,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/18Mbps.trace workloads/18Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 219,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 216,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 37 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 216,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 45 mm-link workloads/29Mbps.trace workloads/29Mbps.trace",
+        "client-duration": 35,
+        "expert_cwnd": 218,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 36 mm-link workloads/36Mbps.trace workloads/36Mbps.trace",
+        "client-duration": 29,
+        "expert_cwnd": 216,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 46 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 215,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 58 mm-link workloads/22Mbps.trace workloads/22Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 213,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 46 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 238,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 28 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 24,
+        "expert_cwnd": 238,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 37 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 234,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 26 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 22,
+        "expert_cwnd": 238,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/21Mbps.trace workloads/21Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 238,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 59 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 236,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 90 mm-link workloads/16Mbps.trace workloads/16Mbps.trace",
+        "client-duration": 65,
+        "expert_cwnd": 240,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 96 mm-link workloads/15Mbps.trace workloads/15Mbps.trace",
+        "client-duration": 69,
+        "expert_cwnd": 240,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 53 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 238,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 238,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/22Mbps.trace workloads/22Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 235,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 32 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 256,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 36 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 29,
+        "expert_cwnd": 258,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 30 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 25,
+        "expert_cwnd": 255,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 33 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 27,
+        "expert_cwnd": 253,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 61 mm-link workloads/25Mbps.trace workloads/25Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 254,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 256,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 42 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 33,
+        "expert_cwnd": 259,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 252,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 44 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 257,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 29 mm-link workloads/53Mbps.trace workloads/53Mbps.trace",
+        "client-duration": 24,
+        "expert_cwnd": 256,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/21Mbps.trace workloads/21Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 248,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 280,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 54 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 41,
+        "expert_cwnd": 279,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 280,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 31 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 279,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 47 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 274,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 76 mm-link workloads/22Mbps.trace workloads/22Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 279,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 59 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 275,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 272,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 29 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 24,
+        "expert_cwnd": 276,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 50 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 275,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 36 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 29,
+        "expert_cwnd": 276,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/29Mbps.trace workloads/29Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 300,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 58 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 300,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/29Mbps.trace workloads/29Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 300,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 296,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 299,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 94 mm-link workloads/19Mbps.trace workloads/19Mbps.trace",
+        "client-duration": 68,
+        "expert_cwnd": 298,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 30 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 25,
+        "expert_cwnd": 295,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 299,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 299,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/26Mbps.trace workloads/26Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 299,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 298,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 39 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 31,
+        "expert_cwnd": 318,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 320,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 54 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 41,
+        "expert_cwnd": 315,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 310,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 49 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 318,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 61 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 315,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 314,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/25Mbps.trace workloads/25Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 312,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 320,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 46 mm-link workloads/41Mbps.trace workloads/41Mbps.trace",
+        "client-duration": 36,
+        "expert_cwnd": 314,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 42 mm-link workloads/45Mbps.trace workloads/45Mbps.trace",
+        "client-duration": 33,
+        "expert_cwnd": 315,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 97 mm-link workloads/21Mbps.trace workloads/21Mbps.trace",
+        "client-duration": 70,
+        "expert_cwnd": 340,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 41 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 335,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 31 mm-link workloads/65Mbps.trace workloads/65Mbps.trace",
+        "client-duration": 26,
+        "expert_cwnd": 336,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 44 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 337,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 37 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 339,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 331,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 85 mm-link workloads/24Mbps.trace workloads/24Mbps.trace",
+        "client-duration": 62,
+        "expert_cwnd": 340,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 340,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 61 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 336,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 340,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 34 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 28,
+        "expert_cwnd": 334,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 356,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 359,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/28Mbps.trace workloads/28Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 359,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 357,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 356,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/36Mbps.trace workloads/36Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 360,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/29Mbps.trace workloads/29Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 358,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 79 mm-link workloads/27Mbps.trace workloads/27Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 356,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 38 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 30,
+        "expert_cwnd": 355,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 358,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 44 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 359,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/30Mbps.trace workloads/30Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 375,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 380,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 49 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 376,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 58 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 377,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 373,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 42 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 33,
+        "expert_cwnd": 378,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 99 mm-link workloads/23Mbps.trace workloads/23Mbps.trace",
+        "client-duration": 71,
+        "expert_cwnd": 380,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 43 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 373,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 33 mm-link workloads/69Mbps.trace workloads/69Mbps.trace",
+        "client-duration": 27,
+        "expert_cwnd": 380,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 380,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 44 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 374,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 66 mm-link workloads/36Mbps.trace workloads/36Mbps.trace",
+        "client-duration": 49,
+        "expert_cwnd": 396,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 400,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 395,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 400,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 56 mm-link workloads/42Mbps.trace workloads/42Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 392,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 54 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 41,
+        "expert_cwnd": 396,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 396,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 395,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 397,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 399,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 42 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 33,
+        "expert_cwnd": 399,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 45 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 35,
+        "expert_cwnd": 412,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 412,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 413,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/32Mbps.trace workloads/32Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 416,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 43 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 416,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/36Mbps.trace workloads/36Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 420,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 416,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/42Mbps.trace workloads/42Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 420,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 419,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 44 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 418,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 52 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 416,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 79 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 434,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 437,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/42Mbps.trace workloads/42Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 434,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 437,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 40 mm-link workloads/66Mbps.trace workloads/66Mbps.trace",
+        "client-duration": 32,
+        "expert_cwnd": 440,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 436,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 438,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 437,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 55 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 440,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 440,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 440,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 459,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 459,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 455,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 460,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 50 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 458,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 456,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 460,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 455,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 459,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 89 mm-link workloads/31Mbps.trace workloads/31Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 460,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 44 mm-link workloads/62Mbps.trace workloads/62Mbps.trace",
+        "client-duration": 34,
+        "expert_cwnd": 455,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 51 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 39,
+        "expert_cwnd": 476,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 59 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 472,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 475,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 474,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/40Mbps.trace workloads/40Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 480,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 475,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 475,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 49 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 474,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 475,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 48 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 37,
+        "expert_cwnd": 472,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 475,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 45 mm-link workloads/66Mbps.trace workloads/66Mbps.trace",
+        "client-duration": 35,
+        "expert_cwnd": 495,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 56 mm-link workloads/53Mbps.trace workloads/53Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 495,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 494,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 76 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 494,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 66 mm-link workloads/45Mbps.trace workloads/45Mbps.trace",
+        "client-duration": 49,
+        "expert_cwnd": 495,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 56 mm-link workloads/53Mbps.trace workloads/53Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 495,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 83 mm-link workloads/36Mbps.trace workloads/36Mbps.trace",
+        "client-duration": 60,
+        "expert_cwnd": 498,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 493,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 54 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 41,
+        "expert_cwnd": 495,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 55 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 495,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 81 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 59,
+        "expert_cwnd": 500,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 50 mm-link workloads/62Mbps.trace workloads/62Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 517,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 520,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 54 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 41,
+        "expert_cwnd": 513,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 520,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 52 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 511,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 58 mm-link workloads/53Mbps.trace workloads/53Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 512,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 66 mm-link workloads/47Mbps.trace workloads/47Mbps.trace",
+        "client-duration": 49,
+        "expert_cwnd": 517,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/45Mbps.trace workloads/45Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 510,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 89 mm-link workloads/35Mbps.trace workloads/35Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 519,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 52 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 520,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 513,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 98 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 70,
+        "expert_cwnd": 539,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 537,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 538,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 536,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 66 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 49,
+        "expert_cwnd": 539,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 59 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 531,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 538,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 95 mm-link workloads/34Mbps.trace workloads/34Mbps.trace",
+        "client-duration": 68,
+        "expert_cwnd": 538,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 537,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 55 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 532,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 98 mm-link workloads/33Mbps.trace workloads/33Mbps.trace",
+        "client-duration": 70,
+        "expert_cwnd": 539,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 560,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 61 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 559,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 90 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 65,
+        "expert_cwnd": 555,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 558,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 56 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 551,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 55 mm-link workloads/61Mbps.trace workloads/61Mbps.trace",
+        "client-duration": 42,
+        "expert_cwnd": 559,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 552,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 559,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 560,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/42Mbps.trace workloads/42Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 560,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 88 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 557,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 572,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 575,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 580,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 79 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 579,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 94 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 68,
+        "expert_cwnd": 580,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 52 mm-link workloads/66Mbps.trace workloads/66Mbps.trace",
+        "client-duration": 40,
+        "expert_cwnd": 572,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 575,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 578,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 578,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 578,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 50 mm-link workloads/69Mbps.trace workloads/69Mbps.trace",
+        "client-duration": 38,
+        "expert_cwnd": 575,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 600,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 76 mm-link workloads/47Mbps.trace workloads/47Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 595,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 61 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 600,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 600,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 58 mm-link workloads/62Mbps.trace workloads/62Mbps.trace",
+        "client-duration": 44,
+        "expert_cwnd": 599,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 596,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 596,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 600,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 598,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 92 mm-link workloads/39Mbps.trace workloads/39Mbps.trace",
+        "client-duration": 66,
+        "expert_cwnd": 598,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 598,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 614,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 612,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 97 mm-link workloads/38Mbps.trace workloads/38Mbps.trace",
+        "client-duration": 70,
+        "expert_cwnd": 614,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 76 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 608,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 616,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 620,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 65 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 618,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 615,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 100 mm-link workloads/37Mbps.trace workloads/37Mbps.trace",
+        "client-duration": 72,
+        "expert_cwnd": 617,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 90 mm-link workloads/41Mbps.trace workloads/41Mbps.trace",
+        "client-duration": 65,
+        "expert_cwnd": 615,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 620,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 639,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 629,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 630,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/61Mbps.trace workloads/61Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 630,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 629,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 632,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 79 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 632,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 640,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 635,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 635,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 629,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 96 mm-link workloads/41Mbps.trace workloads/41Mbps.trace",
+        "client-duration": 69,
+        "expert_cwnd": 656,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 653,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 76 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 659,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 654,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 62 mm-link workloads/63Mbps.trace workloads/63Mbps.trace",
+        "client-duration": 46,
+        "expert_cwnd": 651,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 92 mm-link workloads/43Mbps.trace workloads/43Mbps.trace",
+        "client-duration": 66,
+        "expert_cwnd": 659,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 84 mm-link workloads/47Mbps.trace workloads/47Mbps.trace",
+        "client-duration": 61,
+        "expert_cwnd": 658,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 57 mm-link workloads/69Mbps.trace workloads/69Mbps.trace",
+        "client-duration": 43,
+        "expert_cwnd": 656,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 651,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 82 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 60,
+        "expert_cwnd": 656,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 654,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 670,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 81 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 59,
+        "expert_cwnd": 675,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 667,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 88 mm-link workloads/46Mbps.trace workloads/46Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 675,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 670,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 678,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 86 mm-link workloads/47Mbps.trace workloads/47Mbps.trace",
+        "client-duration": 62,
+        "expert_cwnd": 674,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 90 mm-link workloads/45Mbps.trace workloads/45Mbps.trace",
+        "client-duration": 65,
+        "expert_cwnd": 675,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 678,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 99 mm-link workloads/41Mbps.trace workloads/41Mbps.trace",
+        "client-duration": 71,
+        "expert_cwnd": 676,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 675,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 696,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 60 mm-link workloads/70Mbps.trace workloads/70Mbps.trace",
+        "client-duration": 45,
+        "expert_cwnd": 700,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 82 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 60,
+        "expert_cwnd": 697,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 84 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 61,
+        "expert_cwnd": 700,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 690,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 89 mm-link workloads/47Mbps.trace workloads/47Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 697,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 693,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 694,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/61Mbps.trace workloads/61Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 691,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 696,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 700,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/67Mbps.trace workloads/67Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 715,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 718,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/57Mbps.trace workloads/57Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 712,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 63 mm-link workloads/68Mbps.trace workloads/68Mbps.trace",
+        "client-duration": 47,
+        "expert_cwnd": 714,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 720,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 710,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 720,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 64 mm-link workloads/67Mbps.trace workloads/67Mbps.trace",
+        "client-duration": 48,
+        "expert_cwnd": 715,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/62Mbps.trace workloads/62Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 713,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/54Mbps.trace workloads/54Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 720,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 73 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 718,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 79 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 737,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 733,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 88 mm-link workloads/50Mbps.trace workloads/50Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 733,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 100 mm-link workloads/44Mbps.trace workloads/44Mbps.trace",
+        "client-duration": 72,
+        "expert_cwnd": 733,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 68 mm-link workloads/65Mbps.trace workloads/65Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 737,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 733,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/66Mbps.trace workloads/66Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 737,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/62Mbps.trace workloads/62Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 734,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 740,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 79 mm-link workloads/56Mbps.trace workloads/56Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 737,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 74 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 54,
+        "expert_cwnd": 740,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 89 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 756,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 71 mm-link workloads/64Mbps.trace workloads/64Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 757,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 66 mm-link workloads/69Mbps.trace workloads/69Mbps.trace",
+        "client-duration": 49,
+        "expert_cwnd": 759,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 89 mm-link workloads/51Mbps.trace workloads/51Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 756,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/59Mbps.trace workloads/59Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 757,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 75 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 55,
+        "expert_cwnd": 750,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 754,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 95 mm-link workloads/48Mbps.trace workloads/48Mbps.trace",
+        "client-duration": 68,
+        "expert_cwnd": 760,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/66Mbps.trace workloads/66Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 759,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 70 mm-link workloads/65Mbps.trace workloads/65Mbps.trace",
+        "client-duration": 52,
+        "expert_cwnd": 758,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 78 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 57,
+        "expert_cwnd": 754,
+        "num-clients": 8,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 77 mm-link workloads/60Mbps.trace workloads/60Mbps.trace",
+        "client-duration": 56,
+        "expert_cwnd": 770,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 773,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 69 mm-link workloads/67Mbps.trace workloads/67Mbps.trace",
+        "client-duration": 51,
+        "expert_cwnd": 770,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 72 mm-link workloads/65Mbps.trace workloads/65Mbps.trace",
+        "client-duration": 53,
+        "expert_cwnd": 780,
+        "num-clients": 1,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 80 mm-link workloads/58Mbps.trace workloads/58Mbps.trace",
+        "client-duration": 58,
+        "expert_cwnd": 773,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 88 mm-link workloads/53Mbps.trace workloads/53Mbps.trace",
+        "client-duration": 64,
+        "expert_cwnd": 777,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 95 mm-link workloads/49Mbps.trace workloads/49Mbps.trace",
+        "client-duration": 68,
+        "expert_cwnd": 776,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 66 mm-link workloads/70Mbps.trace workloads/70Mbps.trace",
+        "client-duration": 49,
+        "expert_cwnd": 770,
+        "num-clients": 2,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 90 mm-link workloads/52Mbps.trace workloads/52Mbps.trace",
+        "client-duration": 65,
+        "expert_cwnd": 780,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 67 mm-link workloads/69Mbps.trace workloads/69Mbps.trace",
+        "client-duration": 50,
+        "expert_cwnd": 770,
+        "num-clients": 4,
+        "repeats": 1
+    },
+    {
+        "mahimahi-command": "mm-delay 85 mm-link workloads/55Mbps.trace workloads/55Mbps.trace",
+        "client-duration": 62,
+        "expert_cwnd": 779,
+        "num-clients": 8,
+        "repeats": 1
+    }
+]
