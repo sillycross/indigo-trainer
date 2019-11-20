@@ -24,6 +24,24 @@ assert(args.num_leaves > 0)
 
 os.chdir(PROJECT_ROOT)
 
+# make sure that the git directory is clean 
+#
+exit_code = os.system('[ -z "$(git status --untracked-files=no --porcelain)" ]')
+if (exit_code != 0):
+	print('Your git directory is not clean! Commit all changes before running this script!')
+	assert(False)
+	
+exit_code = os.system("git status --untracked-files=no | grep 'Your branch is up to date with'")
+if (exit_code != 0):	# grep returns 1 on no matches and 2 on error
+	print('Your git branch is not up to date with remote! Push all changes before running this script!')
+	assert(False)
+
+exit_code = os.system('git symbolic-ref --short HEAD > cur_branchname.txt')
+assert(exit_code == 0)
+
+with open('all_branchnames.txt') as f:
+    trainer_repo_branch_name = f.read()
+    
 if (args.run_id == None):
     print('Run ID not specified, automatically assigning unique ID to this run...')
     exit_code = os.system('git ls-remote --heads git@github.com:%s/%s.git > all_branchnames.txt' % (GITHUB_USER_NAME, MODEL_REPO_NAME))
@@ -50,6 +68,7 @@ if (args.run_id == None):
 
 print('*******************************')
 print('Run ID: %s' % args.run_id)
+print('Trainer Branch Name: %s' % trainer_repo_branch_name)
 print('GCP Zone: %s' % args.zone)
 print('Num Leaves: %d' % args.num_leaves)
 print('*******************************')
