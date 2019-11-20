@@ -12,20 +12,25 @@ from env_vars import *
 
 gcp_zone_default = "us-central1-f"
 parser = argparse.ArgumentParser()
-parser.add_argument("--cred", dest="cred", help="the Github personal access token")
+parser.add_argument("--cred-file", dest="cred_file", help="the file storing the Github personal access token")
 parser.add_argument("--num-leaves", dest="num_leaves", help="the number of leaves to use")
 parser.add_argument("--zone", dest="zone", default=gcp_zone_default, help="Optional. The Google Cloud Compute zone to create instances")
 parser.add_argument("--run-id", dest="run_id", help="Optional. If manually assigned, must be a globally unique ID for this train run. It will be used as instance group name, instance name prefix, and branch prefix in model repo. May only contain '-', 'a-z', '0-9'")
 
 args = parser.parse_args()
 
-assert(args.cred != None)
+assert(args.cred_file != None)
 assert(args.num_leaves != None)
 args.num_leaves = int(args.num_leaves)
 assert(args.num_leaves > 0)
 
 os.chdir(PROJECT_ROOT)
 
+with open(args.cred_file) as f:
+    cred_content = f.read().splitlines()
+    assert(len(cred_content) == 1)
+    cred_content = cred_content[0]
+    
 # make sure that the git directory is clean 
 #
 exit_code = os.system('[ -z "$(git status --untracked-files=no --porcelain)" ]')
@@ -173,7 +178,7 @@ def master_fn(leaf_id):
     if exit_code != 0:
         print('*** ERR *** Failed to generate gcp_config.json!')
         return exit_code
-    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 master_setup.py --cred %s' % (TRAIN_REPO_NAME, args.cred))
+    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 master_setup.py --cred %s' % (TRAIN_REPO_NAME, cred_content))
     if exit_code != 0:
         print('*** ERR *** Failed to execute master_setup.py!')
         return exit_code
@@ -181,7 +186,7 @@ def master_fn(leaf_id):
     
 print('Initializing environment on nodes..')
 threads = []
-for i in range(0, args.num_leaves)
+for i in range(0, args.num_leaves):
     threads.append(AsyncRunOnNode(i, leaf_fn))
     threads[i].run()
 
