@@ -46,7 +46,7 @@ class AsyncRunOnLeaf(threading.Thread):
         self.exit_code = -1
 		
     def run(self):
-        self.exit_code = fn(self.leaf_id)
+        self.exit_code = self.fn(self.leaf_id)
 	
 def ExecuteOnAllLeaves(fn):
     threads = []

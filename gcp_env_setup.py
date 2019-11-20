@@ -107,27 +107,61 @@ monitoring,monitoring-write,pubsub,service-control,\
 service-management,sql,sql-admin,storage-full,\
 storage-ro,storage-rw,taskqueue,trace,userinfo-email""" % (instance_name, instance_template, instance_zone)
     exit_code = os.system(cmd)
-    assert(exit_code == 0)
+    if (exit_code != 0):
+        print('*** ERR *** create instance failed!')
+        return exit_code
 	
     cmd = """gcloud compute instance-groups unmanaged add-instances %s \
 --instances %s --zone %s""" % (instance_group_name, instance_name, instance_zone)
     exit_code = os.system(cmd)
-    assert(exit_code == 0)
+    if (exit_code != 0):
+        print('*** ERR *** add instance into group failed!')
+        return exit_code
+        
+    return 0
     
-# create each leaf and add to instance group 
-#
-for i in range(0, args.num_leaves):
+def create_leaf(i):
     print('Creating leaf %d...' % i) 
-    create_node(instance_group_name=instance_group_name,
-                instance_template='indigo-lkm-leaf-4cpu', 
-                instance_name='indigo-%s-leaf%d' % (args.run_id, i), 
-                instance_zone=args.zone)
+    return create_node(instance_group_name=instance_group_name,
+                       instance_template='indigo-lkm-leaf-4cpu', 
+                       instance_name='indigo-%s-leaf%d' % (args.run_id, i), 
+                       instance_zone=args.zone)
+                
+def create_master(i):
+    assert(i == -1)
+    print('Creating master..')
+    return create_node(instance_group_name=instance_group_name,
+                       instance_template='indigo-lkm-master', 
+                       instance_name='indigo-%s-master' % (args.run_id), 
+                       instance_zone=args.zone)
+            
+class AsyncRunOnNode(threading.Thread):
+    def __init__(self, leaf_id, fn):
+        threading.Thread.__init__(self)
+        self.fn = fn
+        self.leaf_id = leaf_id
+        self.daemon = True
+        self.exit_code = -1
+		
+    def run(self):
+        self.exit_code = self.fn(self.leaf_id)
+        
+# create each node and add to instance group 
+#
 
-print('Creating master..')
-create_node(instance_group_name=instance_group_name,
-            instance_template='indigo-lkm-master', 
-            instance_name='indigo-%s-master' % (args.run_id), 
-            instance_zone=args.zone)
+threads = []
+for i in range(0, args.num_leaves):
+    threads.append(AsyncRunOnNode(i, create_leaf))
+    threads[i].run()
+
+threads.append(AsyncRunOnNode(-1, create_master))
+threads[-1].run()
+
+for i in range(0, args.num_leaves + 1):
+    threads[i].join()
+	
+for i in range(0, args.num_leaves + 1):
+    assert(threads[i].exit_code == 0)
 
 # Setup master and leaves 
 # We need to clone the repo, checkout the corresponding branch and run the setup script
@@ -141,17 +175,6 @@ def ExecuteOnMasterOrLeaf(leaf_id, command):
     cmd = 'gcloud beta compute --project edgect-1155 ssh --zone %s indigo-%s-%s -- "%s"' % (args.zone, args.run_id, node_name, command)
     exit_code = os.system(cmd)
     return exit_code
-    
-class AsyncRunOnNode(threading.Thread):
-    def __init__(self, leaf_id, fn):
-        threading.Thread.__init__(self)
-        self.fn = fn
-        self.leaf_id = leaf_id
-        self.daemon = True
-        self.exit_code = -1
-		
-    def run(self):
-        self.exit_code = fn(self.leaf_id)
 	
 def init_repo(leaf_id):
     return ExecuteOnMasterOrLeaf(leaf_id, 'git clone https://github.com/%s/%s && cd %s && git checkout %s' % (GITHUB_USER_NAME, TRAIN_REPO_NAME, TRAIN_REPO_NAME, trainer_repo_branch_name))
