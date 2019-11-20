@@ -152,10 +152,10 @@ class AsyncRunOnNode(threading.Thread):
 threads = []
 for i in range(0, args.num_leaves):
     threads.append(AsyncRunOnNode(i, create_leaf))
-    threads[i].run()
+    threads[i].start()
 
 threads.append(AsyncRunOnNode(-1, create_master))
-threads[-1].run()
+threads[-1].start()
 
 for i in range(0, args.num_leaves + 1):
     threads[i].join()
@@ -211,10 +211,10 @@ print('Initializing environment on nodes..')
 threads = []
 for i in range(0, args.num_leaves):
     threads.append(AsyncRunOnNode(i, leaf_fn))
-    threads[i].run()
+    threads[i].start()
 
 threads.append(AsyncRunOnNode(-1, master_fn))
-threads[-1].run()
+threads[-1].start()
 	
 for i in range(0, args.num_leaves + 1):
     threads[i].join()

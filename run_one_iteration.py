@@ -52,7 +52,7 @@ def ExecuteOnAllLeaves(fn):
     threads = []
     for i in range(0, NUM_LEAVES)
         threads.append(AsyncRunOnLeaf(i, fn))
-        threads[i].run()
+        threads[i].start()
 	
     for i in range(0, NUM_LEAVES):
         threads[i].join()
@@ -150,7 +150,7 @@ random.shuffle(all_tasks)
 threads = []
 for i in range(0, NUM_LEAVES)
 	threads.append(AsyncRunOnLeaf(i, leaf_fn))
-    threads[i].run()
+    threads[i].start()
 
 for item in all_tasks:
     q.put(item)
