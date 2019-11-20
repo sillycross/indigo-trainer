@@ -14,6 +14,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--cred", dest="cred", help="the Github personal access token")
 args = parser.parse_args()
 
+assert(args.cred != None)
+
 with open('gcp_config.json') as json_file:
     data = json.load(json_file)
     assert('num_leaves' in data)

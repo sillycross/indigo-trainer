@@ -53,6 +53,9 @@ assert(exit_code == 0)
 exit_code = os.system('mv bazel-genfiles/libgraph.pic.a ../%s' % MODEL_REPO_NAME)
 assert(exit_code == 0)
 
+exit_code = os.system('chmod 644 ../%s/graph.h' % MODEL_REPO_NAME)
+assert(exit_code == 0)
+
 exit_code = os.system('chmod 644 ../%s/libgraph.pic.a' % MODEL_REPO_NAME)
 assert(exit_code == 0)
 
@@ -78,6 +81,11 @@ assert(exit_code == 0)
 print('Copying built LKM to model repo')
 
 os.chdir(PROJECT_ROOT)
+
+# sanity check on correctness of the built NN
+
+exit_code = os.system('python3 sanity_check_nn.py')
+assert(exit_code == 0)
 
 exit_code = os.system('cp %s/indigo.ko %s' % (LKM_REPO_NAME, MODEL_REPO_NAME))
 assert(exit_code == 0)
