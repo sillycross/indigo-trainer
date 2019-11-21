@@ -25,8 +25,8 @@ with open('workloads/config.json') as json_file:
 # read all training data points
 #
 num_collected = 0
-aggregated_expert_actions = None
-aggregated_input_vectors = None
+expert_actions_list = []
+input_vectors_list = []
 for it in range(0, VERSION + 1):
     assert(os.path.isdir("training_data/%d" % it))
     for j in range(0, len(tasks_json)):
@@ -37,16 +37,17 @@ for it in range(0, VERSION + 1):
                 if expert_actions is not None:
                     if it == VERSION:
                         num_collected += expert_actions.shape[0]
-                    if aggregated_expert_actions is not None:
-                        aggregated_expert_actions = np.concatenate((aggregated_expert_actions, expert_actions))
-                        aggregated_input_vectors = np.concatenate((aggregated_input_vectors, input_vectors))
-                    else:
-                        aggregated_expert_actions = expert_actions
-                        aggregated_input_vectors = input_vectors
+                    expert_actions_list.append(expert_actions)
+                    input_vectors_list.append(input_vectors)
             else:
                 assert(False)
 
-assert(aggregated_expert_actions is not None)
+print('Finished reading training data')
+
+assert(len(expert_actions_list) > 0)
+aggregated_expert_actions = np.concatenate(expert_actions_list)
+aggregated_input_vectors = np.concatenate(input_vectors_list)
+
 if not USING_LSTM_MODEL:
     assert(num_collected % EPISODE_LEN == 0)
     num_collected = num_collected // EPISODE_LEN
