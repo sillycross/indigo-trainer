@@ -24,6 +24,7 @@ if USING_LSTM_MODEL:
         t.model.input: input_v,
         t.model.state_in: lstm_state,
     })
+    action_probs = action_probs[0]
 else:
     input_v = np.array([param])
     action_probs, lstm_state = t.sess.run([t.model.action_probs, t.model.state_out], {
