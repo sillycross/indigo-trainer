@@ -178,7 +178,10 @@ class Trainer(object):
                 
             if iters_since_min_loss >= max(0.2 * curr_iter, 50) and time_elapsed > 600:
                 break
-		
+		    
+		    if time_elapsed > 900:
+		        break
+		        
         self.sess.run(self.load_from_best_op)
 		
     def test_accuracy(self, all_inputs, all_expert_actions):
