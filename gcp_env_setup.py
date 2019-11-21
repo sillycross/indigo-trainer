@@ -8,6 +8,7 @@ import time
 import subprocess
 import socket
 
+from logger import logger
 from env_vars import *
 
 gcp_zone_default = "us-central1-f"
