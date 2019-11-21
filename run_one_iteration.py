@@ -40,6 +40,7 @@ def ScpFromLeaf(leaf_id, remote_filename, local_filename):
             logger.warning('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
             if retry_cnt > 10:
                 break
+            time.sleep(retry_cnt)
         else:
             break
     return exit_code
@@ -58,6 +59,7 @@ def ExecuteOnLeaf(leaf_id, command):
             logger.warning('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
             if retry_cnt > 10:
                 break
+            time.sleep(retry_cnt)
         else:
             break
     return exit_code
