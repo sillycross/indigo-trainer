@@ -108,7 +108,7 @@ def leaf_init(leaf_id):
     return ExecuteOnLeaf(leaf_id, 'cd %s/%s && git pull && git checkout %s && [ \'0\' == \\"$(cat %s/version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, RUN_ID, MODEL_REPO_NAME))
 
 def leaf_update(leaf_id):
-    return ExecuteOnLeaf(leaf_id, 'cd %s/%s && sudo rmmod indigo.ko && git pull && && [ \'%d\' == \\"$(cat %s/version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, VERSION, MODEL_REPO_NAME))
+    return ExecuteOnLeaf(leaf_id, 'cd %s/%s && sudo rmmod indigo.ko && git pull && [ \'%d\' == \\"$(cat %s/version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, VERSION, MODEL_REPO_NAME))
 	
 if (VERSION == 0):
     # for the first iteration, let the leaves pull the repo, checkout correct branch, and insmod
