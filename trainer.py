@@ -197,15 +197,14 @@ class Trainer(object):
             assert(all_expert_actions.shape[0] == all_inputs.shape[0])
             assert(all_expert_actions.shape[1] == all_inputs.shape[1])
             
-            for k in range(0, all_inputs.shape[0]):
-                lstm_state = self.model.zero_init_state(1)
-                for i in range(0, all_inputs.shape[1]):
-                    input_v = np.array([[all_inputs[k][i]]])
-                    action_probs, lstm_state = self.sess.run([self.model.action_probs, self.model.state_out], {
-                        self.model.input: input_v,
-                        self.model.state_in: lstm_state,
-                    })
-                    action = np.argmax(action_probs[0])
+            lstm_state = self.model.zero_init_state(all_inputs.shape[0])
+            for i in range(0, all_inputs.shape[1]):
+                action_probs, lstm_state = self.sess.run([self.model.action_probs, self.model.state_out], {
+                    self.model.input: all_inputs[:,i:i+1,:],
+                    self.model.state_in: lstm_state,
+                })
+                for k in range(0, all_inputs.shape[0]):
+                    action = np.argmax(action_probs[k])
                     if action == all_expert_actions[k][i]:
                         correct += 1
                     total += 1
