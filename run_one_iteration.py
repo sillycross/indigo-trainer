@@ -28,14 +28,37 @@ with open('gcp_config.json') as json_file:
 
 def ScpFromLeaf(leaf_id, remote_filename, local_filename):
     assert(0 <= leaf_id and leaf_id < NUM_LEAVES)
+    retry_cnt = 0
     cmd = 'gcloud beta compute --project edgect-1155 scp indigo-%s-leaf%d:%s %s --zone %s' % (RUN_ID, leaf_id, remote_filename, local_filename, GCP_ZONE)
-    exit_code = os.system(cmd)
+    while True:
+        exit_code = os.system(cmd)
+        if exit_code == 65280:
+            # ssh failed with some small probablity
+            # just retry in this case
+            retry_cnt += 1
+            print('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
+            if retry_cnt > 10:
+                break
+        else:
+            break
     return exit_code
+
 	
 def ExecuteOnLeaf(leaf_id, command):
     assert(0 <= leaf_id and leaf_id < NUM_LEAVES)
+    retry_cnt = 0
     cmd = 'gcloud beta compute --project edgect-1155 ssh --zone %s indigo-%s-leaf%d -- "%s"' % (GCP_ZONE, RUN_ID, leaf_id, command)
-    exit_code = os.system(cmd)
+    while True:
+        exit_code = os.system(cmd)
+        if exit_code == 65280:
+            # ssh failed with some small probablity
+            # just retry in this case
+            retry_cnt += 1
+            print('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
+            if retry_cnt > 10:
+                break
+        else:
+            break
     return exit_code
 
 class AsyncRunOnLeaf(threading.Thread):
