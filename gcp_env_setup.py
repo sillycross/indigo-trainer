@@ -197,7 +197,7 @@ def master_fn(leaf_id):
     if exit_code != 0:
         print('*** ERR *** Failed to init repo!')
         return exit_code
-    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 generate_gcp_config_json.py --num_leaves %d --run-id %s --zone %s' % (TRAIN_REPO_NAME, args.num_leaves, args.run_id, args.zone))
+    exit_code = ExecuteOnMasterOrLeaf(leaf_id, 'cd %s && python3 generate_gcp_config_json.py --num_leaves %d --run_id %s --zone %s' % (TRAIN_REPO_NAME, args.num_leaves, args.run_id, args.zone))
     if exit_code != 0:
         print('*** ERR *** Failed to generate gcp_config.json!')
         return exit_code
