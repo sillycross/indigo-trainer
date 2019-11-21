@@ -11,7 +11,7 @@ TRAIN_REPO_NAME = 'indigo-trainer'
 
 # are we using LSTM model or stateless model?
 #
-USING_LSTM_MODEL = False
+USING_LSTM_MODEL = True
 
 PROJECT_ROOT = path.dirname(path.abspath(__file__))
 
