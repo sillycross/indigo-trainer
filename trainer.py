@@ -166,7 +166,10 @@ class Trainer(object):
 
             if curr_iter > 1000:
                 break
-
+            
+            if max_loss < 0.005:
+                break
+                
             #if iters_since_min_loss >= max(0.2 * curr_iter, 10):
             #    break
 		
