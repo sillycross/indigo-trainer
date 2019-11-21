@@ -8,6 +8,7 @@ import time
 import subprocess
 import socket
 from queue import *
+import random
 
 from env_vars import *
 
@@ -50,7 +51,7 @@ class AsyncRunOnLeaf(threading.Thread):
 	
 def ExecuteOnAllLeaves(fn):
     threads = []
-    for i in range(0, NUM_LEAVES)
+    for i in range(0, NUM_LEAVES):
         threads.append(AsyncRunOnLeaf(i, fn))
         threads[i].start()
 	
@@ -72,7 +73,7 @@ assert(exit_code == 0)
 with open('version') as f:
     values = f.read().splitlines()
     assert(len(values) == 1)
-    VERSION = int(value[0])
+    VERSION = int(values[0])
     assert(VERSION >= 0)
 
 os.chdir(PROJECT_ROOT)
@@ -80,10 +81,10 @@ os.chdir(PROJECT_ROOT)
 print('****** Training on model version %d ******' % VERSION)
 
 def leaf_init(leaf_id):
-    return ExecuteOnLeaf(leaf_id, 'cd %s/%s && git pull && git checkout %s && [ \'0\' == \\"$(cat version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, RUN_ID))
+    return ExecuteOnLeaf(leaf_id, 'cd %s/%s && git pull && git checkout %s && [ \'0\' == \\"$(cat %s/version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, RUN_ID, MODEL_REPO_NAME))
 
 def leaf_update(leaf_id):
-    return ExecuteOnLeaf(leaf_id, 'cd %s/%s && sudo rmmod indigo.ko && git pull && && [ \'%d\' == \\"$(cat version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, VERSION))
+    return ExecuteOnLeaf(leaf_id, 'cd %s/%s && sudo rmmod indigo.ko && git pull && && [ \'%d\' == \\"$(cat %s/version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, VERSION, MODEL_REPO_NAME))
 	
 if (VERSION == 0):
     # for the first iteration, let the leaves pull the repo, checkout correct branch, and insmod
@@ -122,7 +123,7 @@ def collect_sample(leaf_id, task):
     
 def leaf_fn(leaf_id):
     ret = 0
-	while True:
+    while True:
         item = q.get()
         if item is None:
             break
@@ -148,8 +149,8 @@ for i in range(0, len(tasks_json)):
 random.shuffle(all_tasks)
 
 threads = []
-for i in range(0, NUM_LEAVES)
-	threads.append(AsyncRunOnLeaf(i, leaf_fn))
+for i in range(0, NUM_LEAVES):
+    threads.append(AsyncRunOnLeaf(i, leaf_fn))
     threads[i].start()
 
 for item in all_tasks:
@@ -160,7 +161,7 @@ q.join()
 for i in range(0, NUM_LEAVES):
     q.put(None)
 
-for i in range(0, NUM_LEAVES)
+for i in range(0, NUM_LEAVES):
     threads[i].join()
 
 for i in range(0, NUM_LEAVES):

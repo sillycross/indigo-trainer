@@ -32,6 +32,9 @@ with open('gcp_config.json') as json_file:
 
 os.chdir(PROJECT_ROOT)
 
+exit_code = os.system('sudo sysctl -w net.ipv4.ip_forward=1')
+assert(exit_code == 0)
+
 exit_code = os.system('git clone https://%s:%s@github.com/%s/%s.git' % (GITHUB_USER_NAME, args.cred, GITHUB_USER_NAME, MODEL_REPO_NAME))
 assert(exit_code == 0)
 
