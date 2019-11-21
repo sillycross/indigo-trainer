@@ -33,8 +33,8 @@ def ScpFromLeaf(leaf_id, remote_filename, local_filename):
     cmd = 'gcloud beta compute --project edgect-1155 scp indigo-%s-leaf%d:%s %s --zone %s' % (RUN_ID, leaf_id, remote_filename, local_filename, GCP_ZONE)
     while True:
         exit_code = os.system(cmd)
-        if exit_code == 65280:
-            # ssh failed with some small probablity
+        if exit_code == 256:
+            # scp failed with some small probablity
             # just retry in this case
             retry_cnt += 1
             logger.warning('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
