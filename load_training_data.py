@@ -6,6 +6,10 @@ from env_vars import *
 #
 def load_training_data(npz_file_path):
     data = np.load(npz_file_path)
+    if 'empty' in data.files:
+        data.close()
+        return (None, None)
+        
     assert('expert_actions' in data.files)
     assert('input_vectors' in data.files)
     expert_actions = data['expert_actions']

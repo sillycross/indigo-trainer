@@ -32,9 +32,6 @@ with open('gcp_config.json') as json_file:
 
 os.chdir(PROJECT_ROOT)
 
-exit_code = os.system('python3 install_pkgs.py')
-assert(exit_code == 0)
-
 exit_code = os.system('git clone https://%s:%s@github.com/%s/%s.git' % (GITHUB_USER_NAME, args.cred, GITHUB_USER_NAME, MODEL_REPO_NAME))
 assert(exit_code == 0)
 
