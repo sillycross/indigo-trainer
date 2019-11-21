@@ -8,6 +8,7 @@ import json
 from trainer import Trainer
 from env_vars import *
 from load_training_data import *
+from logger import logger
 
 model_root = PROJECT_ROOT + '/' + MODEL_REPO_NAME
 
@@ -42,7 +43,7 @@ for it in range(0, VERSION + 1):
             else:
                 assert(False)
 
-print('Finished reading training data')
+logger.info('Finished reading training data')
 
 assert(len(expert_actions_list) > 0)
 aggregated_expert_actions = np.concatenate(expert_actions_list)
@@ -56,19 +57,19 @@ expect_collected = 0
 for task in tasks_json:
     expect_collected += task['repeats'] * task['num-clients']
 
-print('Expecting %d data points in last iteration, actually got %d data points.' % (expect_collected, num_collected))
+logger.info('Expecting %d data points in last iteration, actually got %d data points.' % (expect_collected, num_collected))
 
 t = Trainer(model_path = model_root + '/model')
 
 correct, total = t.test_accuracy(aggregated_input_vectors, aggregated_expert_actions)
-print('Before training: %d / %d correct' % (correct, total))
+logger.info('Before training: %d / %d correct' % (correct, total))
 
 t.train(aggregated_input_vectors, aggregated_expert_actions)
 
 correct, total = t.test_accuracy(aggregated_input_vectors, aggregated_expert_actions)
-print('After training: %d / %d correct' % (correct, total))
+logger.info('After training: %d / %d correct' % (correct, total))
 
 t.save_model(model_path = model_root + '/model')
 
-print('Updated model has been saved.')
+logger.info('Updated model has been saved.')
 

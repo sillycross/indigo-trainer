@@ -1,9 +1,11 @@
 import numpy as np
 import tensorflow as tf
 from tensorflow.contrib import layers, rnn
+import time
 
 from model import DaggerLSTM, DaggerNetwork
 from env_vars import *
+from logger import logger
 
 class Trainer(object):
     def __init__(self, model_path):
@@ -128,6 +130,8 @@ class Trainer(object):
 
         self.sess.run(self.save_to_best_op)
         
+        start_time = time.time()
+        
         while True:
             # shuffle the training data
             permutation = np.random.permutation(n)
@@ -154,9 +158,11 @@ class Trainer(object):
 
             mean_loss /= num_batches
 
-            print('--- iter %d: max loss %.4f, mean loss %.4f\n' %
+            logger.info('--- iter %d: max loss %.4f, mean loss %.4f\n' %
                              (curr_iter, max_loss, mean_loss))
 
+            time_elapsed = float(time.time() - start_time)
+            
             if max_loss < min_loss - 0.001:
                 min_loss = max_loss
                 self.sess.run(self.save_to_best_op)
@@ -164,14 +170,14 @@ class Trainer(object):
             else:
                 iters_since_min_loss += 1
 
-            if curr_iter > 1000:
+            if curr_iter > 1000 and time_elapsed > 600:
                 break
             
             if max_loss < 0.005:
                 break
                 
-            #if iters_since_min_loss >= max(0.2 * curr_iter, 10):
-            #    break
+            if iters_since_min_loss >= max(0.2 * curr_iter, 50) and time_elapsed > 600:
+                break
 		
         self.sess.run(self.load_from_best_op)
 		

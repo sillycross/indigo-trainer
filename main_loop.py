@@ -10,6 +10,7 @@ import socket
 import datetime
 
 from env_vars import *
+from logger import logger
 
 os.chdir(PROJECT_ROOT)
 
@@ -18,10 +19,10 @@ os.chdir(PROJECT_ROOT)
 
 while True:
     if os.path.exists('stop_training'):
-        print('Stop signal received. Terminate.')
+        logger.info('Stop signal received. Terminate.')
         break
         
-    print('%s: started new iteration...' % str(datetime.datetime.now()))
+    logger.info('%s: started new iteration...' % str(datetime.datetime.now()))
     exit_code = os.system('python3 run_one_iteration.py')
     assert(exit_code == 0)
 

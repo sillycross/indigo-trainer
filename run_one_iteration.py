@@ -10,6 +10,7 @@ import socket
 from queue import *
 import random
 
+from logger import logger
 from env_vars import *
 
 # run one iteration of training
@@ -36,7 +37,7 @@ def ScpFromLeaf(leaf_id, remote_filename, local_filename):
             # ssh failed with some small probablity
             # just retry in this case
             retry_cnt += 1
-            print('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
+            logger.warning('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
             if retry_cnt > 10:
                 break
         else:
@@ -54,7 +55,7 @@ def ExecuteOnLeaf(leaf_id, command):
             # ssh failed with some small probablity
             # just retry in this case
             retry_cnt += 1
-            print('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
+            logger.warning('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
             if retry_cnt > 10:
                 break
         else:
@@ -101,7 +102,7 @@ with open('version') as f:
 
 os.chdir(PROJECT_ROOT)
 
-print('****** Training on model version %d ******' % VERSION)
+logger.info('****** Training on model version %d ******' % VERSION)
 
 def leaf_init(leaf_id):
     return ExecuteOnLeaf(leaf_id, 'cd %s/%s && git pull && git checkout %s && [ \'0\' == \\"$(cat %s/version)\\" ] && sudo insmod indigo.ko' % (TRAIN_REPO_NAME, MODEL_REPO_NAME, RUN_ID, MODEL_REPO_NAME))
@@ -116,7 +117,7 @@ else:
     # for later iterations, just rmmod, pull the repo, and insmod
     ExecuteOnAllLeaves(leaf_update)
 	
-print('****** All leaves updated LKM successfully, distributing tasks to leaves ******')
+logger.info('****** All leaves updated LKM successfully, distributing tasks to leaves ******')
 
 # OK if exists
 os.system('mkdir training_data')
@@ -134,12 +135,12 @@ def collect_sample(leaf_id, task):
     repeat_id = task[1]
     exit_code = ExecuteOnLeaf(leaf_id, 'cd %s && python3 collect_data.py --task %d' % (TRAIN_REPO_NAME, task_id))
     if (exit_code != 0):
-        print('***ERR*** collect_data.py failed with exit code %d' % exit_code)
+        logger.error('***ERR*** collect_data.py failed with exit code %d' % exit_code)
         return exit_code
     
     exit_code = ScpFromLeaf(leaf_id, '%s/training_output.npz' % TRAIN_REPO_NAME, 'training_data/%d/%d_%d.npz' % (VERSION, task_id, repeat_id))
     if (exit_code != 0):
-        print('***ERR*** scp failed with exit code %d' % exit_code)
+        logger.error('***ERR*** scp failed with exit code %d' % exit_code)
         return exit_code
     
     return 0
@@ -152,8 +153,7 @@ def leaf_fn(leaf_id):
             break
         exit_code = collect_sample(leaf_id, item)
         if (exit_code != 0):
-            print('***ERR*** Command failed with exit code %d! Leaf id: %d, item:' % (exit_code, leaf_id))
-            print(item)
+            logger.error('***ERR*** Command failed with exit code %d! Leaf id: %d, item %s' % (exit_code, leaf_id, str(item)))
             ret = exit_code
         q.task_done()
     return ret
@@ -190,7 +190,7 @@ for i in range(0, NUM_LEAVES):
 for i in range(0, NUM_LEAVES):
     assert(threads[i].exit_code == 0)
     
-print('****** All leaf tasks completed successfully, training model ******')
+logger.info('****** All leaf tasks completed successfully, training model ******')
 
 start_time = time.time()
 
@@ -199,17 +199,17 @@ assert(exit_code == 0)
 
 end_time = time.time()
 
-print('****** Training complete in %f sec, building .pb file ******' % (float(end_time - start_time)))
+logger.info('****** Training complete in %f sec, building .pb file ******' % (float(end_time - start_time)))
 
 exit_code = os.system('python3 build_pb_file.py')
 assert(exit_code == 0)
 
-print('****** .pb file build complete, building LKM file ******')
+logger.info('****** .pb file build complete, building LKM file ******')
 
 exit_code = os.system('python3 build_lkm_file.py')
 assert(exit_code == 0)
 
-print('****** LKM file build complete, incrementing model version to %d and committing model ******' % (VERSION + 1))
+logger.info('****** LKM file build complete, incrementing model version to %d and committing model ******' % (VERSION + 1))
 
 exit_code = os.system('echo "%d" > %s/version' % (VERSION + 1, MODEL_REPO_NAME))
 assert(exit_code == 0)
@@ -217,5 +217,5 @@ assert(exit_code == 0)
 exit_code = os.system('python3 commit_model.py')
 assert(exit_code == 0)
 
-printf('****** Training on model version %d complete, now model version is incremented to %d ******' % (VERSION, VERSION + 1))
+logger.info('****** Training on model version %d complete, now model version is incremented to %d ******' % (VERSION, VERSION + 1))
 
