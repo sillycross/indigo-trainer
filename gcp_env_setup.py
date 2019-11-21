@@ -172,8 +172,20 @@ def ExecuteOnMasterOrLeaf(leaf_id, command):
         node_name = 'leaf%d' % leaf_id
     else:
         node_name = 'master'
+    retry_cnt = 0
     cmd = 'gcloud beta compute --project edgect-1155 ssh --zone %s indigo-%s-%s -- "%s"' % (args.zone, args.run_id, node_name, command)
-    exit_code = os.system(cmd)
+    while True:
+        exit_code = os.system(cmd)
+        if exit_code == 65280:
+            # ssh failed with some small probablity
+            # just retry in this case
+            retry_cnt += 1
+            logger.warning('***WARN*** ssh failed, retrying.. leaf_id = %d, cnt = %d' % (leaf_id, retry_cnt))
+            if retry_cnt > 10:
+                break
+            time.sleep(retry_cnt)
+        else:
+            break
     return exit_code
 	
 def init_repo(leaf_id):
